@@ -1,0 +1,55 @@
+/* Border color: #bdc3c7
+   date color: #3498db
+   h2 color: #2c3e50
+   font: source sans pro
+*/
+
+.main-article {
+  border: 20px solid #bdc3c7;
+  border-radius: 20px;
+  padding: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+
+}
+
+.background-img{
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.main-text {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.main-date {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 0;
+  color: #3498db;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-p-first {
+  border-left: 5px solid #bdc3c7;
+  padding-left: 5px;
+}
+
+.main-p-second {
+  border-left: 5px solid #bdc3c7;
+  padding-left: 5px;
+}
+
+body {
+  background-image: url("email-pattern.png");
+}
+
+h2 {
+ text-transform: capitalize;
+ font-family: 'Source Sans Pro', sans-serif;
+ font-size: 30px;
+ color: #2c3e50;
+}
