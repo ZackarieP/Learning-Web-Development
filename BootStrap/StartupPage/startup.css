@@ -1,0 +1,28 @@
+body {
+  background: url(cat.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 45%;
+  margin: 0;
+}
+
+.navbar-inverse {
+  background-color: #e7e7e7;
+  border-color: rgb(0,0,0,0);
+}
+
+
+.navbar-inverse:hover {
+  background-color:
+}
+
+.cute-cat {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: 100%;
+  object-fit: cover;
+}
