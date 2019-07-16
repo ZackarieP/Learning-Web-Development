@@ -1,28 +1,69 @@
 body {
-  background: url(cat.jpg);
+  background: url(catv2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 45%;
   margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+#content {
+  text-align: center;
+  padding-top: 25%;
+  color: white;
+  background-color: transparent;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5em;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+hr {
+  width: 400px;
+  ;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0, 0.2);
+}
+
+.btn {
+  color: black;
 }
 
 .navbar-inverse {
   background-color: #e7e7e7;
-  border-color: rgb(0,0,0,0);
+  border-color: rgba(0, 0, 0, 0);
+  border-bottom: none;
 }
 
-
-.navbar-inverse:hover {
-  background-color:
+.navbar-inverse .navbar-nav>li>a {
+  color: #666666;
 }
 
-.cute-cat {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-size: 100%;
-  object-fit: cover;
+.navbar-inverse .navbar-nav>li>a:hover {
+  background-color: lightgrey;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #666666;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  background-color: lightgrey;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: darkgrey;
 }
