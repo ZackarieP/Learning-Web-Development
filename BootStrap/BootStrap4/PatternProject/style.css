@@ -3,3 +3,18 @@ body {}
 .navbar-brand {
   color: white;
 }
+
+.jumbotron {
+  text-align: center;
+  color: black;
+  background: url(imgs/header.jpeg);
+}
+
+.col-lg-4 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.card {
+  width: 100%;
+}
