@@ -1,9 +1,9 @@
 var userInput = prompt("Are we there yet?");
+var answer = "yes";
+var answer1 = "yeah";
 
-
-while (userInput !== "yes" || "yeah") {
-    if (userInput === "yes" || "yeah") {
-        alert("Yay, we finally made it!");
-    } else
-        userInput = prompt("Are we there yet?");
+while (userInput !== answer && userInput !== answer1) {
+    userInput = prompt("Are we there yet?");
 }
+
+alert("Yay, we made it!");
