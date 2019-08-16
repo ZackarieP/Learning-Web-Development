@@ -13,9 +13,7 @@ window.setTimeout(function() {
 
         if (input == "list") {
             console.log(todos);
-        }
-
-        if (input == "new") {
+        } else if (input == "new") {
             var newTodo = prompt("What do you have todo?");
             todos.push(newTodo);
             console.log(todos);
