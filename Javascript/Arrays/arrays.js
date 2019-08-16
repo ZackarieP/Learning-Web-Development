@@ -1,24 +1,22 @@
 var todos = [];
 
-window.setTimeout(function() {
+window.setTimeout(function () {
 
     var input = prompt("What would you like to do?");
 
-    if (input == "quit") {
-        console.log("Done");
-    }
-
     while (input != "quit") {
-        input = prompt("What would you like to do?");
+
 
         if (input == "list") {
             console.log(todos);
         } else if (input == "new") {
             var newTodo = prompt("What do you have todo?");
             todos.push(newTodo);
-            console.log(todos);
         }
+        input = prompt("What would you like to do?");
     }
-    
-}, 500);
+    console.log(todos);
+    console.log("Ok, you quit the app");
 
+
+}, 500);
