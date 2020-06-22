@@ -1,4 +1,4 @@
-printReverse([1, 2, 3, 4]); //4, 3, 2, 1
+// printReverse([1, 2, 3, 4]); 4, 3, 2, 1
 
 function printReverse(nums) {
     for (let i = nums.length - 1; i >= 0; i--) {
@@ -7,10 +7,10 @@ function printReverse(nums) {
 }
 
 
-isUniform([1, 1, 1, 1]); // true
-isUniform([2, 1, 1, 1]); // false
-isUniform(["a", "b", "p"]); // false
-isUniform(["b", "b", "b"]); // true
+// isUniform([1, 1, 1, 1]); true
+// isUniform([2, 1, 1, 1]); false
+// isUniform(["a", "b", "p"]); false
+// isUniform(["b", "b", "b"]); true
 
 function isUniform(arr) {
     let first = arr[0];
@@ -32,8 +32,8 @@ function sumArray(nums) {
 }
 
 
-max([1, 2, 3, 4]); // return 4
-max([1, 6, 3, 4]); // return 6
+// max([1, 2, 3, 4]); return 4
+// max([1, 6, 3, 4]); return 6
 
 function max(nums) {
     let maxNum = 0;
@@ -43,4 +43,14 @@ function max(nums) {
         }
     }
     return maxNum;
+}
+
+
+// build own ForEach
+function myForEach(arr, func) {
+    // loop through array
+    for (let i = 0; i < arr.length; i++) {
+        // call func for each item in array
+        func();
+    }
 }
