@@ -17,9 +17,13 @@
 
     <div class="container">
         <div class="jumbotron">
-            <h1 class="text-center">Todo List App</h1>
-            <div style="justify-content: center;"><input class="border border-dark rounded-sm" type="text"> <a
-                    class="plus" onclick=""><i class="fa fa-plus"></i></a>
+            <h1 id="header" class="text-center">Todo List App</h1>
+            <div style="justify-content: center;">
+                <input id="inputText" class="border border-dark rounded-sm" type="text">
+                <button class="plus" type="submit" onclick="getTodo();"><i class="fa fa-plus"></i></button>
+                <ul>
+                    <li id="listItem"></li>
+                </ul>
             </div>
         </div>
     </div>
