@@ -51,3 +51,5 @@ var movieDB = {
         }
     ]
 };
+
+movieDB.movies.name()
