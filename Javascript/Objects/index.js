@@ -38,18 +38,31 @@ var someObject = {
 // movieDB exercise lecture 171
 var movieDB = {
     movies: [{
-            name: "Bugs Life"
+            title: "Bugs Life",
+            rating: 5,
+            hasWatched: "seen"
         },
         {
-            name: "Frozen"
+            title: "Toy Story 4",
+            rating: 3,
+            hasWatched: "not seen"
         },
         {
-            name: "Frozen 2"
+            title: "Frozen",
+            rating: 4.5,
+            hasWatched: "seen"
         },
         {
-            name: "Die Hard"
+            title: "Die Hard",
+            rating: 3.45,
+            hasWatched: "seen"
         }
     ]
 };
 
-movieDB.movies.name()
+function movieStat() {
+    for (let i = 0; i < movieDB.movies.length; i++) {
+        console.log('You have ' + movieDB.movies[i].hasWatched +
+            ' "' + movieDB.movies[i].title + '" - ' + movieDB.movies[i].rating + ' stars');
+    }
+}
