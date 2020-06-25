@@ -9,6 +9,35 @@
 
 <body>
 
+    <h1>Hello</h1>
+    <h1>Goodbye</h1>
+    <ul>
+        <li id="highlight">List Item 1</li>
+        <li class="bolded">List Item 2</li>
+        <li class="bolded">List Item 3</li>
+    </ul>
+
+    <script>
+        var tag = document.getElementById("highlight");
+        console.log(tag);
+
+        // grabs all elements with this class name
+        var tags = document.getElementsByClassName("bolded");
+        console.log(tags);
+
+        // grabs all elements with this tag name
+        tags = document.getElementsByTagName("li");
+        console.log(tags);
+
+        // when calling querySelector, you must include css attribute
+        // can also take in tag names i.e. document.querySelector("h1");
+        var query = document.querySelector("#highlight");
+        console.log(query);
+
+        query = document.querySelectorAll("h1");
+        console.log(query);
+    </script>
+
 </body>
 
 </html>
