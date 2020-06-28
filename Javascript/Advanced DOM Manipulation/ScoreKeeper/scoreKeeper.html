@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scoreKeeper.css">
     <title>Score Keeper</title>
 </head>
 
@@ -11,18 +12,21 @@
 
     <h1>
         <span id="firstPlayer">0</span>
-        <span>to</span>
+        to
         <span id="secondPlayer">0</span>
     </h1>
 
-    <p>Playing to: <span id="endScore">5</span></p>
+    <p>Playing to: <span>5</span></p>
 
-    <input type="number">
+    <!-- <button class="scoreCard">Score Limit</button> -->
+    <input type="number" min="0">
+    <br />
+    <br />
     <button class="player1">Player One</button>
     <button class="player2">Player Two</button>
     <button class="reset">Reset</button>
 
-    <script src="index.js"></script>
+    <script src="scoreKeeper.js"></script>
 </body>
 
 </html>
