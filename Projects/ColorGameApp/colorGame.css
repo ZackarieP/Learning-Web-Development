@@ -3,6 +3,7 @@
     margin: 0;
     border: 0;
     font-family: cursive;
+    text-transform: uppercase;
 }
 
 body {
@@ -18,12 +19,29 @@ body {
     line-height: 3.5rem;
 }
 
+.header h1 {
+    color: white;
+}
+
+.rgbHeader {
+    font-size: 50px;
+}
+
 .option {
     background-color: white;
     width: 100%;
+    margin-top: 20px;
 }
 
 .top-header {
-    background-color: aqua;
+    /* will change dynamically with JS */
+    background-color: rgb(114, 114, 216);
     padding-top: 20px;
+}
+
+.box-choice {
+    /* will change dynamically with JS */
+    background-color: red;
+    cursor: pointer;
+    border-radius: 0.5rem;
 }
