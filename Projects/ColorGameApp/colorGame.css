@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: cursive;
+}
+
+body {
+    background-color: black;
+}
+
+.header-container {
+    text-align: center;
+}
+
+.header {
+    display: inline-block;
+    line-height: 3.5rem;
+}
+
+.option {
+    background-color: white;
+    width: 100%;
+}
+
+.top-header {
+    background-color: aqua;
+    padding-top: 20px;
+}
