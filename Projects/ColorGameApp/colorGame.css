@@ -1,8 +1,12 @@
+:root {
+    --main-bg-color: rgb(114, 114, 216);
+}
+
 * {
     padding: 0;
     margin: 0;
     border: 0;
-    font-family: cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
 }
 
@@ -24,24 +28,42 @@ body {
 }
 
 .rgbHeader {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .option {
-    background-color: white;
     width: 100%;
-    margin-top: 20px;
+    letter-spacing: 3px;
 }
 
 .top-header {
-    /* will change dynamically with JS */
-    background-color: rgb(114, 114, 216);
-    padding-top: 20px;
+    background-color: var(--main-bg-color);
 }
 
 .box-choice {
-    /* will change dynamically with JS */
+    /* will change dynamically with JS (possibly loops) */
     background-color: red;
     cursor: pointer;
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
+}
+
+.easy {
+    margin-right: 20px;
+}
+
+.easy:hover {
+    background-color: var(--main-bg-color);
+}
+
+.hard:hover {
+    background-color: var(--main-bg-color);
+}
+
+.newColors {
+    margin-left: 300px;
+    cursor: pointer;
+}
+
+.newColors:hover {
+    background-color: var(--main-bg-color);
 }

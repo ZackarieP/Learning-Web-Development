@@ -1,6 +1,7 @@
+var color = randomRGB();
+
 // random rgb color
 function randomRGB() {
-    // document.body.style.backgroundColor = "rgb(" + randomNum() + ", " + randomNum() + ", " + randomNum();
     return "rgb( " + randomNum() + ", " + randomNum() + ", " + randomNum() + ")";
 }
 console.log(randomRGB());
@@ -12,11 +13,17 @@ function randomNum() {
 console.log(randomNum());
 
 var rgbHead = document.querySelector(".rgbHeader");
-var rgbDisplay = document.querySelector(".top-header")
+var rgbDisplay = document.querySelector(".top-header");
 
-
+// on page load header receives randomized color for the game to start
 window.addEventListener("load", function () {
-    let color = randomRGB();
     rgbHead.innerHTML = color;
-    // rgbDisplay.style.backgroundColor = color;
 });
+
+let divs = document.querySelector(".box-choice");
+
+for (let i = 0; i < divs.length; i++) {
+    divs[i] = window.addEventListener("load", function () {
+
+    });
+}
