@@ -12,14 +12,11 @@ console.log(color);
 function randomNumRGB() {
     return Math.ceil(Math.random() * 255);
 }
-console.log(randomNumRGB());
-
 
 // random number between 0-5 for the indices in the "divs" array below to equal 6 in total
 function randomNumBox() {
     return Math.floor(Math.random() * 5);
 }
-console.log(randomNumBox());
 
 
 var rgbHead = document.querySelector(".rgbHeader");
@@ -28,6 +25,7 @@ var rgbDisplay = document.querySelector(".top-header");
 window.addEventListener("load", () => {
     rgbHead.innerHTML = color;
 });
+
 
 /* on page load, boxes in game area receive random color and one 
     index is chosen to be the winner
@@ -48,8 +46,8 @@ window.addEventListener("load", () => {
     for (let i = 0; i < divs.length; i++) {
         divs[i].style.backgroundColor = randomRGB();
     }
-    winner();
     while (!isWinner) {
+        winner();
         // placeholder so the page does not run continuously while developing logic
         break;
     }
