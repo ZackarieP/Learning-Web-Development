@@ -33,22 +33,30 @@ window.addEventListener("load", () => {
 let divs = document.querySelectorAll(".box-choice");
 let isWinner = false;
 let winningBox = divs[winnerNum];
+let winnerOfGame = document.querySelector("#winner");
 
 // function for user choosing the correct color tile
 function winner() {
+    if (!isWinner) {
+
+    }
     winningBox.style.backgroundColor = color;
     winningBox.addEventListener("click", () => {
-        alert("You won!");
-        location.reload();
+        winnerOfGame.innerHTML = "You've won!";
     });
 }
 window.addEventListener("load", () => {
+    newColors();
+});
+
+let newColor = document.querySelector(".newColors");
+// function for new colors
+function newColors() {
     for (let i = 0; i < divs.length; i++) {
         divs[i].style.backgroundColor = randomRGB();
     }
-    while (!isWinner) {
-        winner();
-        // placeholder so the page does not run continuously while developing logic
-        break;
-    }
+    winner();
+}
+newColor.addEventListener("click", () => {
+    location.reload();
 });
