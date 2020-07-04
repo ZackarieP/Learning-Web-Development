@@ -6,13 +6,12 @@ var rgbDisplay = document.querySelector(".top-header");
 
 let divs = document.querySelectorAll(".box-choice");
 let winningBox = divs[winnerNum];
-let losingBox = divs[0];
 let winnerOfGame = document.querySelector("#winner");
 
 let newColor = document.querySelector(".newColors");
 
 
-// random rgb color
+// random rgb color 
 function randomRGB() {
     return "rgb( " + randomNumRGB() + ", " + randomNumRGB() + ", " + randomNumRGB() + ")";
 }
