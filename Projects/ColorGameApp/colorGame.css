@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     border: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-transform: uppercase;
 }
 
@@ -41,10 +41,9 @@ body {
 }
 
 .box-choice {
-    /* will change dynamically with JS (possibly loops) */
-    background-color: red;
     cursor: pointer;
     border-radius: 0.8rem;
+    padding: 85px;
 }
 
 .easy {
@@ -62,6 +61,8 @@ body {
 .newColors {
     margin-left: 300px;
     cursor: pointer;
+    font-size: 1.5rem;
+
 }
 
 .newColors:hover {

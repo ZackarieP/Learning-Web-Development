@@ -68,17 +68,15 @@ function removeTile() {
                 for (let j = 0; j < divs.length; j++) {
                     divs[j].classList.remove("hidden");
                     divs[j].style.backgroundColor = color;
+                    divs[j].style.pointerEvents = "none";
                 }
                 rgbDisplay.style.backgroundColor = color;
                 newColor.textContent = "Play Again?";
             }
             return;
-
         });
     }
 }
-
-
 removeTile();
 
 
