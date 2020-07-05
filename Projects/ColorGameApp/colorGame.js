@@ -28,6 +28,7 @@ function randomNumRGB() {
 function randomNumBox() {
     return Math.floor(Math.random() * 5);
 }
+console.log(randomNumBox());
 
 
 // on page load, header receives randomized color for the game to start
@@ -63,13 +64,22 @@ function removeTile() {
         divs[i].addEventListener("click", () => {
             if (divs[i] != divs[winnerNum]) {
                 divs[i].classList.add("hidden");
+            } else {
+                for (let j = 0; j < divs.length; j++) {
+                    divs[j].classList.remove("hidden");
+                    divs[j].style.backgroundColor = color;
+                }
+                rgbDisplay.style.backgroundColor = color;
+                newColor.textContent = "Play Again?";
             }
+            return;
+
         });
     }
-
 }
-removeTile();
 
+
+removeTile();
 
 
 newColor.addEventListener("click", () => {
