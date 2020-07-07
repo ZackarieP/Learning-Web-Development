@@ -13,7 +13,7 @@ let newColor = document.querySelector(".newColors");
 
 // random rgb color 
 function randomRGB() {
-    return "rgb( " + randomNumRGB() + ", " + randomNumRGB() + ", " + randomNumRGB() + ")";
+    return "rgb(" + randomNumRGB() + ", " + randomNumRGB() + ", " + randomNumRGB() + ")";
 }
 console.log(color);
 

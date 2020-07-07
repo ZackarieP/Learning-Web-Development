@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #232323;
 }
 
 .header-container {
@@ -32,7 +32,7 @@ body {
 }
 
 .option {
-    width: 100%;
+    width: 30%;
     letter-spacing: 2.5px;
 }
 
@@ -43,7 +43,6 @@ body {
 .box-choice {
     cursor: pointer;
     border-radius: 0.8rem;
-    padding: 85px;
 }
 
 .easy {
@@ -77,4 +76,16 @@ body {
 
 button {
     margin-left: 25%;
+}
+
+.square {
+    width: 30%;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+.centered {
+    margin: 0 auto;
+    max-width: 600px;
 }
