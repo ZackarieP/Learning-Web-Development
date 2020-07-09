@@ -16,6 +16,7 @@ body {
 
 .header-container {
     text-align: center;
+    text-shadow: 1px 1px 0.2px black;
 }
 
 .header {
