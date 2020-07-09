@@ -1,6 +1,11 @@
 var color = randomRGB();
 var winnerNum = randomNumBox();
 
+var popSound = new Audio();
+popSound.src = "/Projects/ColorGameApp/Sound/pop.mp3";
+var winSound = new Audio();
+winSound.src = "Projects/ColorGameApp/Sound/tada.wav";
+
 var rgbHead = document.querySelector(".rgbHeader");
 var rgbDisplay = document.querySelector(".top-header");
 
@@ -13,7 +18,7 @@ let newColor = document.querySelector(".newColors");
 
 // random rgb color 
 function randomRGB() {
-    return "rgb(" + randomNumRGB() + ", " + randomNumRGB() + ", " + randomNumRGB() + ")";
+    return `rgb(${randomNumRGB()} , ${randomNumRGB()} , ${randomNumRGB()})`;
 }
 console.log(color);
 
@@ -75,6 +80,8 @@ function removeTile() {
         divs[i].addEventListener("click", function () {
             if (this != divs[winnerNum]) {
                 this.classList.add("hidden");
+                popSound.play();
+
             } else {
                 for (let j = 0; j < divs.length; j++) {
                     divs[j].classList.remove("hidden");
@@ -83,6 +90,7 @@ function removeTile() {
                 }
                 rgbDisplay.style.backgroundColor = color;
                 newColor.innerHTML = "Play Again?";
+                winSound.play();
             }
         });
     }
