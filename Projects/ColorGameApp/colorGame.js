@@ -3,8 +3,6 @@ var winnerNum = randomNumBox();
 
 var popSound = new Audio();
 popSound.src = "/Projects/ColorGameApp/Sound/pop.mp3";
-var winSound = new Audio();
-winSound.src = "Projects/ColorGameApp/Sound/tada.wav";
 
 var rgbHead = document.querySelector(".rgbHeader");
 var rgbDisplay = document.querySelector(".top-header");
@@ -79,9 +77,8 @@ function removeTile() {
     for (let i = 0; i < divs.length; i++) {
         divs[i].addEventListener("click", function () {
             if (this != divs[winnerNum]) {
-                this.classList.add("hidden");
                 popSound.play();
-
+                this.classList.add("hidden");
             } else {
                 for (let j = 0; j < divs.length; j++) {
                     divs[j].classList.remove("hidden");
@@ -90,7 +87,6 @@ function removeTile() {
                 }
                 rgbDisplay.style.backgroundColor = color;
                 newColor.innerHTML = "Play Again?";
-                winSound.play();
             }
         });
     }
