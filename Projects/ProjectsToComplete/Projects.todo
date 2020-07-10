@@ -1,0 +1,8 @@
+Projects: 
+    ✔ Color Game App @done(20-07-09 21:11)
+    ☐ Clock App @started(20-07-09 21:26)
+        ☐ Possibly use a JS library with this: 
+        - Grab API for world clocks to show time around the world in major cities
+    ☐ Weather App
+        - Call weather api
+    ☐ Todo List App 
