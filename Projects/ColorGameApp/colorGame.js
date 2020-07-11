@@ -68,7 +68,6 @@ function newColors() {
 }
 // reset winning rgb and change colors and header background back to normal color
 
-
 /*
     REFACTOR REFACTOR REFACTOR
 */
