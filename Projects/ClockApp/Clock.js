@@ -12,5 +12,4 @@ let clocksColdPlay = new Audio("/Projects/ClockApp/Sound/clocks.mp3");
 function button() {
     clocksColdPlay.volume = 0.09;
     clocksColdPlay.play();
-
 }
