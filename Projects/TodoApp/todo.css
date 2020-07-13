@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: rgba(100, 200, 80, 0.315);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 63, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
 .flexbox-container {
@@ -12,23 +13,38 @@ body {
     justify-content: center;
 }
 
+.header {
+    background-color: rgba(68, 151, 219, 0.808);
+    border-radius: 10px 10px 0 0;
+    padding-left: 10px;
+    font-size: 25px;
+    padding-top: 3px;
+}
+
+i {
+    padding-left: 58%;
+}
+
+.input {
+    width: 97.5%;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.input::-webkit-input-placeholder {
+    padding-left: 5px;
+}
+
 .flexbox-item {
-    background-color: rgba(96, 160, 212, 0.685);
-    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #ffff;
     width: 200px;
     margin: 10px;
+    margin-top: 80px;
 }
 
 .flexbox-item-1 {
-    background-color: black;
-    min-height: 100px;
-}
-
-.flexbox-item-2 {
-    background-color: brown;
-    min-height: 200px;
-}
-
-.flexbox-item-3 {
-    min-height: 300px;
+    min-height: 450px;
+    min-width: 400px;
 }
