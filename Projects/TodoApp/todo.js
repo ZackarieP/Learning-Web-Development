@@ -1,18 +1,19 @@
-let newTodos = [];
-let textInput = document.querySelector(".input");
+let text = document.querySelector("#input");
 
-let list = document.querySelector(".todos");
-let entry = document.createElement("li");
+let ul = document.querySelector(".todos");
+let li = document.createElement("li");
 // let plus = document.querySelector("#plus-icon").addEventListener("click");
 
-textInput.addEventListener("keydown", function (e) {
+text.addEventListener("keydown", function (e) {
     if (e.key == "Enter") {
-        for (let i = 0; i < newTodos.length; i++) {
-            newTodos[i] = (this.value);
-            entry.appendChild(document.createTextNode(newTodos[i]));
-        }
-        list.appendChild(entry);
-        textInput.value = "";
-
-    }
+        li.appendChild(document.createTextNode(text.value));
+        ul.appendChild(li);
+        text.value = "";
+    } else return;
 });
+
+// function listItem() {
+//     li.appendChild(document.createTextNode(text.value));
+//     ul.appendChild(li);
+//     text.value = "";
+// }

@@ -23,8 +23,8 @@ i {
     padding-left: 58%;
 }
 
-.input,
-.input:focus {
+#input,
+#input:focus {
     width: 97.5%;
     border: none;
     outline: none;
@@ -32,7 +32,7 @@ i {
     padding: 5px;
 }
 
-.input::-webkit-input-placeholder {
+#input::-webkit-input-placeholder {
     padding-left: 5px;
 }
 
