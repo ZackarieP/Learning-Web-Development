@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 }
 
 i {
-    padding-left: 58%;
+    padding-left: 67%;
 }
 
 #input,
@@ -44,11 +45,11 @@ i {
 }
 
 .flexbox-item-1 {
-    min-height: 450px;
-    min-width: 400px;
+    min-height: 550px;
+    min-width: 500px;
     box-shadow: 5px 5px 10px rgba(2, 0, 36, 1);
 }
 
-li {
-    list-style-type: none;
+#todos {
+    padding-left: 5px;
 }
