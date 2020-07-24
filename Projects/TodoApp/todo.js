@@ -1,5 +1,4 @@
 let textInput = document.querySelector("#input");
-
 let ul = document.querySelector("#todos");
 let li = document.createElement("li");
 let plus = document.querySelector("#plus-icon");
@@ -14,7 +13,7 @@ let addLi = function (e) {
         ul.appendChild(li);
         text.value = "";
     } else return;
-}
+};
 
 textInput.addEventListener("keydown", function (e) {
     var ul = document.getElementById("todos");
